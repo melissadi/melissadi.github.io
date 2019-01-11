@@ -1,0 +1,27 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-family: abril fatface;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 1em 0 0 0;
+}
+
+section {
+  background-image: url("rayandmelissa.jpg");
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+footer {
+  font-family: josefin sans;
+  font-size: 15px;
+  background-color: rgb(50,26,40);
+  color: white;
+  margin: 0;
+  padding: 1em;
+}

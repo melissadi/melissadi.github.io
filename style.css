@@ -1,27 +1,131 @@
 body {
-  padding: 0;
-  margin: 0;
+  background-color: rgb(66,100,84);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100VH;
 }
+
+.pictureAndGreen {
+  display: flex;
+  flex-direction: row;
+  border: 5px solid rgb(66,100,84);
+  background-color: rgb(66,100,84);
+}
+
+.desktop {
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+.picture {
+  width: 50%;
+}
+
+.greenSide {
+  background-color: rgb(66,100,84);
+  margin: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+.text {
+  justify-content: center;
+}
+
 h1 {
   font-family: abril fatface;
-  font-size: 40px;
-  text-align: center;
-  margin: 0;
-  padding: 1em 0 0 0;
-}
-
-section {
-  background-image: url("rayandmelissa.jpg");
-  background-size: cover;
-  height: 100vh;
-  margin: 0;
-}
-
-footer {
-  font-family: josefin sans;
-  font-size: 15px;
-  background-color: rgb(50,26,40);
+  font-weight: lighter;
+  font-size: 45px;
+  margin: 0 0 .5em 0;
+  text-align: left;
   color: white;
-  margin: 0;
-  padding: 1em;
 }
+
+p {
+  display: none;
+  font-family: josefin sans;
+  color: white;
+  font-weight: strong;
+}
+
+input {
+  width: 100%;
+  padding: 2px;
+  font-size: 1.5em;
+  background-color: transparent;
+  border: 2px white solid;
+  color: white;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  font-family: josefin sans;
+  font-weight: strong;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  margin: 1em 0 0 0;
+  padding: .5em;
+}
+
+@media only screen and (max-width: 1000px){
+
+  body {
+    justify-content: flex-start;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .pictureAndGreen {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .picture {
+    width: 100%;
+    flex-shrink: 2;
+    max-height: 50VH;
+    overflow: hidden;
+    flex-grow: 0;
+  }
+
+  .greenSide {
+    width: 75%;
+    flex-shrink: 1;
+    flex-basis: 50%;
+  }
+
+  h1 {
+    padding: 0;
+    font-size: 80px;
+  }
+
+  input, button {
+    font-size: 50px;
+  }
+
+  input {
+    padding: .25em;
+  }

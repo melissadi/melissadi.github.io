@@ -79,7 +79,7 @@ button {
   padding: .5em;
 }
 
-@media (max-width: 767px) and (orientation: portrait) {
+@media only screen and (max-width: 767px) {
 
   body {
     justify-content: flex-start;
@@ -110,8 +110,6 @@ button {
     overflow: hidden;
     flex-grow: 0;
     min-height: 400px;
-    justify-content: center;
-    align-items: center;
   }
 
   .greenSide {

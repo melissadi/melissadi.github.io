@@ -80,7 +80,7 @@ button {
   padding: .5em;
 }
 
-@media only screen and (max-width: 1000px) and (orientation: portrait){
+@media only screen and (max-width: 1000px) and (max-aspect-ratio: 13/9){
 
   body {
     justify-content: flex-start;

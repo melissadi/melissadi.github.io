@@ -50,11 +50,15 @@ h1 {
   color: white;
 }
 
-p {
+.errorMessage {
   display: none;
   font-family: josefin sans;
   color: white;
   font-weight: strong;
+}
+
+.errorMessageDisplay {
+  display: block;
 }
 
 input {

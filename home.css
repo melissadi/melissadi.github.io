@@ -1,0 +1,56 @@
+h1 {
+  font-family: abril fatface;
+  font-size: 60px;
+  color: rgb(55,24,21);
+  text-align: center;
+  margin: .5em 0 .5em 0;
+}
+
+p {
+  font-family: josefin sans;
+  font-size: 30px;
+  color: rgb(55,24,21);
+  padding: .5em .5em 0 0;
+}
+
+.welcome {
+  background-image: url(rayandmelissa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75VH;
+  margin: 0 40px 0 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.welcomeText {
+  width: 45%;
+}
+
+.blankSideLeft {
+  width: 55%;
+}
+
+.navButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 40px 10px 40px;
+}
+
+button {
+  width: 15%;
+  padding: 0 .5em 0 .5em;
+  font-family: josefin sans;
+  font-size: 20px;
+  background-color: transparent;
+  color: rgb(28,75,102);
+  border-color: transparent;
+}
+
+button+button {
+  border-left: 2px solid rgb(28,75,102);
+  background-color: none;
+}

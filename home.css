@@ -1,38 +1,4 @@
-body {
-  margin: 1em 8em;
-}
-
-.rayAndMelissaText {
-  font-family: abril fatface;
-  font-size: 60px;
-  color: rgb(55,24,21);
-  margin: .5em 0 .5em 0;
-  text-decoration: none;
-}
-
-.welcome {
-  background-image: url(rayandmelissa.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 75VH;
-  margin: 0 40px 0 40px;
-  display: flex;
-  flex-direction: row;
-}
-
-header {
-  margin: 0 4em;
-  text-align: center;
-}
-
-.navButtons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2em;
-}
+/*-- header and navigation --*/
 
 a.button {
   width: 200px;
@@ -52,6 +18,50 @@ a.button+a.button {
 
 a.button:hover {
   color: rgba(28,75,102,.5);
+}
+
+.navButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+
+.rayAndMelissaText {
+  font-family: abril fatface;
+  font-size: 60px;
+  color: rgb(55,24,21);
+  margin: .5em 0 .5em 0;
+  text-decoration: none;
+}
+
+/*-- page content --*/
+
+body {
+  margin: 1em 8em;
+}
+
+header {
+  margin: 0 4em;
+  text-align: center;
+}
+
+html {
+  max-width: 1100px;
+  margin: 0 auto;
+  }
+
+
+.welcome {
+  background-image: url(rayandmelissa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75VH;
+  margin: 0 40px 0 40px;
+  display: flex;
+  flex-direction: row;
 }
 
 @media only screen and (max-width: 1000px) and (max-aspect-ratio: 13/9){

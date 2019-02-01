@@ -1,101 +1,4 @@
-body {
-  margin: 1em 8em;
-}
-
-.content {
-  border: 1px solid rgb(28,75,102);
-  padding: 1em 2em;
-  border-radius: 10px;
-}
-
-.rayAndMelissaText {
-  font-family: abril fatface;
-  font-size: 60px;
-  color: rgb(55,24,21);
-  margin: .5em 0 .5em 0;
-  text-decoration: none;
-}
-
-h1 {
-  font-family: josefin sans;
-  font-size: 30px;
-  color: rgb(55,24,21);
-}
-
-p {
-  font-family: raleway;
-  font-weight: lighter;
-  font-size: 18px;
-  color: black;
-}
-
-h3 {
-  font-family: josefin sans;
-  font-size: 20px;
-  color: rgb(55,24,21);
-}
-
-.intro {
-  padding: 1em 0;
-}
-
-.hotelText a {
-  font-family: raleway;
-  font-weight: bold;
-  font-size: 18px;
-  color: rgb(55,24,21);
-}
-
-.bookingLink {
-  display: block;
-  margin: 1em 0;
-}
-
-.options {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.kimpton, .hampton, .inns {
-  width: 33%;
-  margin: 0;
-  padding: .5em;
-}
-
-.kimptonDetails, .hamptonDetails, .innsDetails, .kimptonBed, .hamptonBed, .innsBed {
-  width: 100%;
-}
-
-img {
-  max-width: 100%;
-  display: flex;
-  max-height: 200px;
-  margin: 0 auto;
-}
-
-.kimpton, .hampton, .inns {
-  display: flex;
-  flex-direction: column;
-}
-
-.hotelText {
-  padding: 0;
-  margin: 0 auto;
-}
-
-header {
-  text-align: center;
-}
-
-.navButtons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2em;
-}
+/*-- header and navigation --*/
 
 a.button {
   width: 200px;
@@ -113,18 +16,140 @@ a.button+a.button {
   background-color: none;
 }
 
-a.button:hover {
+a.button:hover, a.button:nth-child(3) {
   color: rgba(28,75,102,.5);
 }
 
-a.button:nth-child(3) {
-  color: rgba(28,75,102,.5);
+.navButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+
+.rayAndMelissaText {
+  font-family: abril fatface;
+  font-size: 60px;
+  color: rgb(55,24,21);
+  margin: .5em 0 .5em 0;
+  text-decoration: none;
+}
+
+body {
+  margin: 1em 8em;
+}
+
+header {
+  margin: 0 4em;
+  text-align: center;
+}
+
+/*-- lodging section --*/
+
+.bookingLink {
+  display: block;
+  margin: 1em 0;
+}
+
+.content {
+  border: 1px solid rgb(28,75,102);
+  padding: 1em 2em;
+  border-radius: 10px;
+}
+
+.hotelText {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.hotelText a {
+  font-family: raleway;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(55,24,21);
+}
+
+.intro {
+  padding: 1em 0;
+}
+
+.kimpton, .hampton, .inns {
+  width: 33%;
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.kimptonDetails, .hamptonDetails, .innsDetails, .kimptonBed, .hamptonBed, .innsBed {
+  width: 100%;
+}
+
+.rayAndMelissaText {
+  font-family: abril fatface;
+  font-size: 60px;
+  color: rgb(55,24,21);
+  margin: .5em 0 .5em 0;
+  text-decoration: none;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+h1 {
+  font-family: josefin sans;
+  font-size: 30px;
+  color: rgb(55,24,21);
+}
+
+h3 {
+  font-family: josefin sans;
+  font-size: 20px;
+  color: rgb(55,24,21);
+}
+
+img {
+  max-width: 100%;
+  display: flex;
+  max-height: 200px;
+  margin: 0 auto;
+}
+
+p {
+  font-family: raleway, sans-serif;;
+  font-weight: lighter;
+  font-size: 18px;
+  color: black;
 }
 
 @media only screen and (max-width: 1000px) and (max-aspect-ratio: 13/9){
 
+  /*-- mobile nav --*/
+
+  .content {
+    border: 1px solid rgb(28,75,102);
+    padding: 2em;
+    border-radius: 5px;
+  }
+
+  a.button {
+    font-size: 30px;
+    width: 700px;
+  }
+
   body {
     margin: 2em;
+  }
+
+  /*-- --*/
+
+  .kimpton, .hampton, .inns {
+    width: 100%;
   }
 
   .options {
@@ -134,17 +159,15 @@ a.button:nth-child(3) {
       justify-content: center;
   }
 
-  .kimpton, .hampton, .inns {
-    width: 100%;
-  }
-
-  img {
-    display: none;
-  }
 
   h3 {
     margin: 0;
     padding-top: 1em;
     font-size: 30px;
   }
+
+  img {
+    display: none;
+  }
+
 }

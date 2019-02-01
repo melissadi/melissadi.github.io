@@ -1,32 +1,4 @@
-.rayAndMelissaText {
-  font-family: abril fatface;
-  font-size: 60px;
-  color: rgb(55,24,21);
-  margin: .5em 0 .5em 0;
-  text-decoration: none;
-}
-
-h2 {
-  font-family: josefin sans;
-  font-weight: lighter;
-  font-size: 30px;
-  color: black;
-  text-align: center;
-  padding-top: 5em;
-}
-
-header {
-  margin: 0 4em;
-  text-align: center;
-}
-
-.navButtons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2em;
-}
+/*-- header and navigation --*/
 
 a.button {
   width: 200px;
@@ -44,10 +16,63 @@ a.button+a.button {
   background-color: none;
 }
 
-a.button:hover {
+a.button:hover, a.button:first-child {
   color: rgba(28,75,102,.5);
 }
 
-a.button:first-child {
-  color: rgba(28,75,102,.5);
+.navButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+
+.rayAndMelissaText {
+  font-family: abril fatface;
+  font-size: 60px;
+  color: rgb(55,24,21);
+  margin: .5em 0 .5em 0;
+  text-decoration: none;
+}
+
+body {
+  margin: 1em 8em;
+}
+
+header {
+  margin: 0 4em;
+  text-align: center;
+}
+
+/*-- events body --*/
+
+h2 {
+  font-family: josefin sans;
+  font-weight: lighter;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  padding-top: 5em;
+}
+
+@media only screen and (max-width: 1000px) and (max-aspect-ratio: 13/9){
+
+  /*-- mobile nav --*/
+
+  .content {
+    border: 1px solid rgb(28,75,102);
+    padding: 2em;
+    border-radius: 5px;
+  }
+
+  a.button {
+    font-size: 30px;
+    width: 700px;
+  }
+
+  body {
+    margin: 2em;
+  }
+
 }

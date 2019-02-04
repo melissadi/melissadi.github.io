@@ -63,6 +63,10 @@ html {
   border-radius: 5px;
 }
 
+.hotelDescription, .bookingLink a {
+  font-size: 15px;
+}
+
 .hotelText {
   padding: 0;
   margin: 0 auto;
@@ -71,7 +75,6 @@ html {
 .hotelText a {
   font-family: raleway;
   font-weight: bold;
-  font-size: 18px;
   color: rgb(55,24,21);
 }
 
@@ -79,16 +82,50 @@ html {
   padding: 1em 0;
 }
 
-.kimpton, .hampton, .inns {
-  width: 33%;
-  margin: 0;
-  padding: 1em;
+.hotelBlock {
+  width: 100%;
+  margin: 1.5em 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
 }
 
-.kimptonDetails, .hamptonDetails, .innsDetails, .kimptonBed, .hamptonBed, .innsBed {
-  width: 100%;
+.hotelPic {
+  width: 30%;
+  background-size: cover;
+  background-repeat: repeat;
+  min-height: 210px;
+}
+
+.kimpton .hotelPic {
+  background-image: url("taconicHotel.jpg");
+}
+
+.hampton .hotelPic {
+  background-image: url("hampton.jpg");
+}
+
+.inns .hotelPic {
+  background-image: url("inns.jpg");
+}
+
+.img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.hotelText {
+  width: 67%;
+  padding: 1em;
+}
+
+.hotelBlock.kimpton {
+  background-color: rgba(28,75,102,.2);
+}
+
+.hotelBlock.inns, .hotelBlock.hampton {
+  border: 1px solid rgba(28,75,102,.2);
 }
 
 .rayAndMelissaText {
@@ -101,27 +138,27 @@ html {
 
 .options {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
 
-h1 {
+h1, h3 {
   font-family: josefin sans;
-  font-size: 30px;
   color: rgb(55,24,21);
 }
 
+h1 {
+  font-size: 30px;
+}
+
 h3 {
-  font-family: josefin sans;
   font-size: 20px;
-  color: rgb(55,24,21);
+  margin: 0;
 }
 
 img {
   max-width: 100%;
-  display: flex;
-  max-height: 200px;
   margin: 0 auto;
 }
 
@@ -164,14 +201,19 @@ p {
       justify-content: center;
   }
 
+  .hotelText {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+  }
 
   h3 {
     margin: 0;
-    padding-top: 1em;
+    padding-top: .5em;
     font-size: 30px;
   }
 
-  img {
+.hotelPic {
     display: none;
   }
 

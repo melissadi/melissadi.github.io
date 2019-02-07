@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans|Roboto:300" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
     <link href="venue.css" rel="stylesheet">
     <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <title>Ray and Melissa</title>
   </head>
   <body>
     <header>
       <a class="rayAndMelissaText" href="home.html">Ray &amp; Melissa</a>
-      <section class="navButtons">
-        <a class="button" href="events.html">Events</a>
-        <a class="button" href="venue.html">Venue</a>
-        <a class="button" href="lodging.html">Lodging</a>
-        <a class="button" href="activities.html">Activities</a>
-        <a class="button" href="registry.html">Registry</a>
-      </section>
+      <ul class="navButtons">
+        <li>
+          <a class="button" href="story.html">Story</a>
+        </li>
+        <li>
+          <a class="button" href="events.html">Events</a>
+        </li>
+        <li>
+          <a class="button active" href="venue.html">Venue</a>
+          <ul class="dropdown hide">
+            <li><a class="button" href="lodging.html">Lodging</a></li>
+            <li><a class="button" href="activities.html">Activites</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="button" href="registry.html">Registry</a>
+        </li>
+      </ul>
     </header>
     <section class="content">
       <section class="venueBlock">
@@ -25,14 +38,15 @@
           <h3>Manchester Village, VT 05254</h3>
         </div>
         <div class="mobileImage">
-          <img src="kimptonoutside.jpg" alt="kimpton">
+          <img src="kimpton.jpg" alt="kimpton">
         </div>
       </section>
-      <p class="kimptonText">The Kimpton Taconic is a small hotel located in Manchester Village. We felt right at home in the Kimpton and hope you do, too!</p>
+      <p class="kimptonText">The Kimpton Taconic is a small and friendly hotel located in Manchester Village. We felt right at home at the Taconic and hope you do, too!</p>
       <section class="gettingThere">
         <h3>Getting There</h3>
-        <p>The Kimpton Taconic is a 3.5 hour drive from Boston Logan Airport, or 3 hours if you’re Melissa’s mom.</p>
-        <p>There is plenty of parking at the hotel, but please note that Manchester is out of the Uber/Lyft circuit. We will provide a shuttle service <strong>after</strong> the reception for guests who choose to leave a car at the Kimpton overnight.</p>
+        <p>The Taconic is a 3.5 hour drive from Boston Logan Airport, or 3 hours if you’re Melissa’s mom.</p>
+        <p>There is plenty of parking at the hotel, but please note that Manchester is out of the Uber/Lyft circuit. We will provide a shuttle service <strong>after</strong> the reception for guests who choose to leave a car at the Kimpton Taconic overnight.</p>
     </section>
+    <script type="text/javascript" src="nav.js"></script>
   </body>
 </html>

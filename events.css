@@ -1,66 +1,39 @@
-/*-- header and navigation --*/
-
-/*-- header and navigation --*/
-
-a.button {
-  width: 200px;
-  text-align: center;
-  font-family: josefin sans;
-  font-size: 20px;
-  background-color: transparent;
-  color: rgb(28,75,102);
-  border-color: transparent;
-  text-decoration: none;
-}
-
-a.button+a.button {
-  border-left: 2px solid rgb(28,75,102);
-  background-color: none;
-}
-
-a.button:hover, a.button:first-child {
-  color: rgba(28,75,102,.5);
-}
-
-.navButtons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2em;
-}
-
-.rayAndMelissaText {
-  font-family: abril fatface;
-  font-size: 60px;
-  color: rgb(55,24,21);
-  margin: .5em 0 .5em 0;
-  text-decoration: none;
-}
-
-body {
-  margin: 1em 8em;
-}
-
-header {
-  margin: 0 4em;
-  text-align: center;
-}
-
-html {
-  max-width: 1100px;
-  margin: 0 auto;
-  }
-
 /*-- events body --*/
 
+.content {
+  border: 1px solid rgb(28,75,102);
+  padding: 1em 4em;
+  border-radius: 5px;
+}
+
 h2 {
-  font-family: josefin sans;
+  font-family: abril fatface;
   font-weight: lighter;
-  font-size: 30px;
-  color: black;
-  text-align: center;
-  padding-top: 5em;
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h3, h4 {
+  font-family: josefin sans;
+  margin: .25em;
+  padding: 0;
+}
+
+h3, h4, p {
+  margin-left: 10px;
+}
+
+p {
+  font-family: roboto;
+  font-size: 16px;
+  margin-bottom: 1.5em;
 }
 
 @media only screen and (max-width: 1000px) and (max-aspect-ratio: 13/9){

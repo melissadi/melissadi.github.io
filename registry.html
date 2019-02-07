@@ -2,25 +2,39 @@
 <html lang="en" dir="ltr">
   <head>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans|Raleway" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
     <link href="registry.css" rel="stylesheet">
     <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <title>Ray and Melissa</title>
   </head>
   <body>
     <header>
       <a class="rayAndMelissaText" href="home.html">Ray &amp; Melissa</a>
-      <section class="navButtons">
-        <a class="button" href="events.html">Events</a>
-        <a class="button" href="venue.html">Venue</a>
-        <a class="button" href="lodging.html">Lodging</a>
-        <a class="button" href="activities.html">Activities</a>
-        <a class="button" href="registry.html">Registry</a>
-      </section>
+      <ul class="navButtons">
+        <li>
+          <a class="button" href="story.html">Story</a>
+        </li>
+        <li>
+          <a class="button" href="events.html">Events</a>
+        </li>
+        <li>
+          <a class="button" href="venue.html">Venue</a>
+          <ul class="dropdown hide">
+            <li><a class="button" href="lodging.html">Lodging</a></li>
+            <li><a class="button" href="activities.html">Activites</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="button active" href="registry.html">Registry</a>
+        </li>
+      </ul>
     </header>
     <section class="checkBack">
       <section class="text">
         <h2>This page is coming soon.</h2>
       </section>
     </section>
+    <script type="text/javascript" src="nav.js"></script>
   </body>
 </html>

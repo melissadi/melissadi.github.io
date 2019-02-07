@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans|Roboto:300" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
     <link href="lodging.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <meta charset="utf-8">
     <title>Ray and Melissa</title>
   </head>
   <body>
   <header>
     <a class="rayAndMelissaText" href="home.html">Ray &amp; Melissa</a>
-    <section class="navButtons">
-      <a class="button" href="events.html">Events</a>
-      <a class="button" href="venue.html">Venue</a>
-      <a class="button" href="lodging.html">Lodging</a>
-      <a class="button" href="activities.html">Activities</a>
-      <a class="button" href="registry.html">Registry</a>
-    </section>
+    <ul class="navButtons">
+      <li>
+        <a class="button" href="story.html">Story</a>
+      </li>
+      <li>
+        <a class="button" href="events.html">Events</a>
+      </li>
+      <li>
+        <a class="button active" href="venue.html">Venue</a>
+        <ul class="dropdown hide">
+          <li><a class="button" href="lodging.html">Lodging</a></li>
+          <li><a class="button" href="activities.html">Activites</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="button" href="registry.html">Registry</a>
+      </li>
+    </ul>
   </header>
 
   <section class="content">
-    <p>Manchester Village is a popular destination for fall leaf-peepers! We recommend booking lodging at your earliest convinience for the best rate.</p>
+    <p>Manchester Village is a popular destination for fall leaf-peepers. We recommend booking lodging at your earliest convinience for the best rate.</p>
     <p>There are several options in and around the village, including private home rentals. If you find accomodations outside of the Kimpton Taconic, we will provide a shuttle service <strong>after</strong> the reception for anyone who chooses to leave a car at the venue.</p>
     <section class="options">
       <div class="hotelBlock kimpton">
@@ -49,5 +62,6 @@
         </div>
       </div>
     </section>
+    <script type="text/javascript" src="nav.js"></script>
   </body>
 </html>

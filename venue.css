@@ -1,60 +1,8 @@
-/*-- header and navigation --*/
-
-a.button {
-  width: 200px;
-  text-align: center;
-  font-family: josefin sans;
-  font-size: 20px;
-  background-color: transparent;
-  color: rgb(28,75,102);
-  border-color: transparent;
-  text-decoration: none;
-}
-
-a.button+a.button {
-  border-left: 2px solid rgb(28,75,102);
-  background-color: none;
-}
-
-a.button:hover, a.button:nth-child(2) {
-  color: rgba(28,75,102,.5);
-}
-
-.navButtons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2em;
-}
-
-.rayAndMelissaText {
-  font-family: abril fatface;
-  font-size: 60px;
-  color: rgb(55,24,21);
-  margin: .5em 0 .5em 0;
-  text-decoration: none;
-}
-
-body {
-  margin: 1em 8em;
-}
-
-header {
-  margin: 0 4em;
-  text-align: center;
-}
-
-html {
-  max-width: 1100px;
-  margin: 0 auto;
-  }
-
 /*-- venue section --*/
 
 .content {
   border: 1px solid rgb(28,75,102);
-  padding: 1em 2em;
+  padding: 1em 4em;
   border-radius: 5px;
 }
 
@@ -76,12 +24,12 @@ html {
 }
 
 .venueBlock {
-  background-image: url(kimptonoutside.jpg);
+  background-image: url(kimptonOutside.jpg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 400px;
-  margin: 0;
+  margin: 0 0 2em 0;
 }
 
 h3, h2 {
@@ -99,8 +47,8 @@ h3 {
 }
 
 p {
-  font-family: raleway;
-  font-size: 18px;
+  font-family: roboto;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 1000px) and (max-aspect-ratio: 13/9){

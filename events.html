@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans|Roboto:300|Raleway" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
     <link href="events.css" rel="stylesheet">
     <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <title>Ray and Melissa</title>
   </head>
   <body>
     <header>
       <a class="rayAndMelissaText" href="home.html">Ray &amp; Melissa</a>
-      <section class="navButtons">
-        <a class="button" href="events.html">Events</a>
-        <a class="button" href="venue.html">Venue</a>
-        <a class="button" href="lodging.html">Lodging</a>
-        <a class="button" href="activities.html">Activities</a>
-        <a class="button" href="registry.html">Registry</a>
-      </section>
+      <ul class="navButtons">
+        <li>
+          <a class="button" href="story.html">Story</a>
+        </li>
+        <li>
+          <a class="button active" href="events.html">Events</a>
+        </li>
+        <li>
+          <a class="button" href="venue.html">Venue</a>
+          <ul class="dropdown hide">
+            <li><a class="button" href="lodging.html">Lodging</a></li>
+            <li><a class="button" href="activities.html">Activites</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="button" href="registry.html">Registry</a>
+        </li>
+      </ul>
     </header>
-    <section class="checkBack">
-      <section class="text">
-        <h2>This page is coming soon.</h2>
+    <section class="content">
+      <section class="friday">
+        <h2>Friday, October 25, 2019</h2>
+        <h3>Beerversity, 8pm</h3>
+        <h4>Loction TBD</h4>
+        <p>If you're up to grab a drink and hang out, let Ray impress you with his selection of beers before the big day. We'll also have ciders and sodas!</p>
+      </section>
+      <section class="saturday">
+        <h2>Saturday, October 26, 2019</h2>
+        <h3>Ceremony, 3pm</h3>
+        <h4>Kimpton Taconic</h4>
+        <h4>3835 Main St</h4>
+        <h4>Manchester, VT 05254</h4>
+        <p>Our ceremony will begin promptly at 3:30pm. We hope to take advantage of the scenery with an outdoor ceremony, so please do bring layers.</p>
+        <h3>Cocktail Hour, 4pm</h3>
+        <h4>Kimpton Taconic</h4>
+        <p>Time to get the party started!</p>
+        <h3>Reception, 5pm</h3>
+        <h4>Kimpton Taconic</h4>
+        <p>We'll continue to celebrate with dinner and <strong>lots</strong> of dancing. Coat check provided.</p>
       </section>
     </section>
+    <script type="text/javascript" src="nav.js"></script>
   </body>
 </html>

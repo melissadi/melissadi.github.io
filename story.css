@@ -1,0 +1,47 @@
+/*-- events body --*/
+.content {
+  border: 1px solid rgb(28,75,102);
+  padding: 1em 4em;
+  border-radius: 5px;
+}
+
+p {
+  font-family: roboto;
+  font-size: 16px;
+  margin-bottom: 1.5em;
+}
+
+.picture {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+h3 {
+  font-family: josefin sans;
+  font-size: 25px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) and (max-aspect-ratio: 13/9){
+
+  /*-- mobile nav --*/
+
+  .content {
+    border: 1px solid rgb(28,75,102);
+    padding: 1em 4em;
+    border-radius: 5px;
+  }
+
+  a.button {
+    font-size: 30px;
+    width: 700px;
+  }
+
+  body {
+    margin: 2em;
+  }
+
+}

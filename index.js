@@ -11,7 +11,9 @@ function checkPassword(){
 
   password = pass.value;
   if (password == 'charlierulez'){
+    localStorage.setItem("status", "loggedIn");
     logIn();
+
   }
   else {
     displayError();
@@ -28,7 +30,7 @@ pass.addEventListener("keypress", function(event){
 });
 
 function logIn(){
-  location = "https://rayandmelissa.com/home.html";
+  location = "./home.html";
 }
 
 function displayError(){

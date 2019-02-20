@@ -1,0 +1,33 @@
+/*-- activities section --*/
+
+h2 {
+  font-family: josefin sans;
+  font-weight: lighter;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  padding-top: 5em;
+}
+
+@media only screen and (max-width: 1000px) and (max-aspect-ratio: 13/9){
+
+  /*-- mobile nav --*/
+
+  .content {
+    border: 1px solid rgb(28,75,102);
+    padding: 2em;
+    border-radius: 5px;
+  }
+
+  a.button {
+    font-size: 30px;
+    width: 700px;
+  }
+
+  body {
+    margin: 2em;
+  }
+
+/*-- --*/
+
+}

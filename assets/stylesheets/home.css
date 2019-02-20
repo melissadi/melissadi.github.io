@@ -1,0 +1,48 @@
+/*-- page content --*/
+
+body {
+  margin: 1em 8em;
+}
+
+header {
+  margin: 0 4em;
+  text-align: center;
+}
+
+html {
+  max-width: 1100px;
+  margin: 0 auto;
+  }
+
+
+.welcome {
+  background-image: url(images/rayandmelissa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75VH;
+  margin: 0 40px 0 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 1000px) and (max-aspect-ratio: 13/9){
+
+  /*-- mobile nav --*/
+
+  .content {
+    border: 1px solid rgb(28,75,102);
+    padding: 2em;
+    border-radius: 5px;
+  }
+
+  a.button {
+    font-size: 30px;
+    width: 700px;
+  }
+
+  body {
+    margin: 2em;
+  }
+
+}

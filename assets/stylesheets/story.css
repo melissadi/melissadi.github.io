@@ -1,0 +1,52 @@
+/*-- events body --*/
+.content {
+  border: 1px solid rgb(28,75,102);
+  padding: 1em 4em;
+  border-radius: 5px;
+}
+
+p {
+  font-family: roboto;
+  font-size: 16px;
+  margin-bottom: 1.5em;
+}
+
+.picture {
+  width: 100%;
+}
+
+.picture.slack {
+  border: 1px solid black;
+}
+
+img {
+  width: 100%;
+  image-orientation: from-image;
+}
+
+h3 {
+  font-family: abril fatface;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 1000px) and (max-aspect-ratio: 13/9){
+
+  /*-- mobile nav --*/
+
+  .content {
+    border: 1px solid rgb(28,75,102);
+    padding: 1em 4em;
+    border-radius: 5px;
+  }
+
+  a.button {
+    font-size: 30px;
+    width: 700px;
+  }
+
+  body {
+    margin: 2em;
+  }
+
+}

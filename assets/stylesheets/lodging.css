@@ -1,0 +1,168 @@
+/*-- lodging section --*/
+
+.bookingLink {
+  display: block;
+  margin: 1em 0;
+}
+
+.content {
+  border: 1px solid rgb(28,75,102);
+  padding: 1em 4em;
+  border-radius: 5px;
+}
+
+.hotelDescription, .bookingLink a {
+  font-size: 15px;
+}
+
+.hotelText {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.hotelText a {
+  font-family: raleway;
+  font-weight: bold;
+  color: rgb(55,24,21);
+}
+
+.intro {
+  padding: 1em 0;
+}
+
+.hotelBlock {
+  width: 100%;
+  margin: .5em 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hotelPic {
+  width: 30%;
+  background-size: cover;
+  background-repeat: repeat;
+  min-height: 210px;
+}
+
+.kimpton .hotelPic {
+  background-image: url("../images/taconicHotel.jpg");
+}
+
+.hampton .hotelPic {
+  background-image: url("../images/hampton.jpg");
+}
+
+.inns .hotelPic {
+  background-image: url("../images/inns.jpg");
+}
+
+.img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.hotelText {
+  width: 67%;
+  padding: 1em;
+}
+
+.hotelBlock.kimpton {
+  background-color: rgba(28,75,102,.2);
+}
+
+.hotelBlock.inns, .hotelBlock.hampton {
+  border: 1px solid rgba(28,75,102,.2);
+}
+
+.rayAndMelissaText {
+  font-family: abril fatface;
+  font-size: 60px;
+  color: rgb(55,24,21);
+  margin: .5em 0 .5em 0;
+  text-decoration: none;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+h1, h3 {
+  font-family: josefin sans;
+  color: rgb(55,24,21);
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+p, a.bookingLink {
+  font-family: roboto;
+  font-weight: lighter;
+  font-size: 16px;
+  color: black;
+}
+
+@media only screen and (max-width: 1000px) and (max-aspect-ratio: 13/9){
+
+  /*-- mobile nav --*/
+
+  .content {
+    border: 1px solid rgb(28,75,102);
+    padding: 2em;
+    border-radius: 5px;
+  }
+
+  a.button {
+    font-size: 30px;
+    width: 700px;
+  }
+
+  body {
+    margin: 2em;
+  }
+
+  /*-- --*/
+
+  .kimpton, .hampton, .inns {
+    width: 100%;
+  }
+
+  .options {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+  }
+
+  .hotelText {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  h3 {
+    margin: 0;
+    padding-top: .5em;
+    font-size: 30px;
+  }
+
+.hotelPic {
+    display: none;
+  }
+
+}

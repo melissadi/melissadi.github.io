@@ -16,7 +16,7 @@ html {
 
 
 .welcome {
-  background-image: url(images/rayandmelissa.jpg);
+  background-image: url(../images/rayandmelissa.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -31,7 +31,6 @@ html {
   /*-- mobile nav --*/
 
   .content {
-    border: 1px solid rgb(28,75,102);
     padding: 2em;
     border-radius: 5px;
   }

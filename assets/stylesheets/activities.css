@@ -1,5 +1,72 @@
 /*-- activities section --*/
 
+.activityLink {
+  display: block;
+  margin: 1em 0 0 0;
+}
+
+.content {
+  border: 1px solid rgb(28,75,102);
+  padding: 1em 4em;
+  border-radius: 5px;
+}
+
+.activityDescription, .activityLink a {
+  font-size: 15px;
+}
+
+.activityText {
+  padding: 0;
+  margin: 0 auto;
+  width: 67%;
+  padding: 1em;
+}
+
+.activityText a {
+  font-family: raleway;
+  font-weight: bold;
+  color: rgb(55,24,21);
+}
+
+.intro {
+  padding: 1em 0;
+}
+
+.activityBlock {
+  width: 100%;
+  margin: .5em 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid rgba(28,75,102,.2);
+}
+
+.activityPic {
+  width: 30%;
+  background-size: cover;
+  background-repeat: repeat;
+  min-height: 210px;
+}
+
+.hiking .activityPic {
+  background-image: url("../images/prospectmanchester.jpeg");
+}
+
+.shopping .activityPic {
+  background-image: url("../images/manchesteroutlets.jpg");
+  background-position: center;
+}
+
+.golf .activityPic {
+  background-image: url("../images/equinoxgolf.jpg");
+}
+
+.img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
 h2 {
   font-family: josefin sans;
   font-weight: lighter;
@@ -7,6 +74,27 @@ h2 {
   color: black;
   text-align: center;
   padding-top: 5em;
+}
+
+p, a.activityLink {
+  font-family: roboto;
+  font-weight: lighter;
+  font-size: 16px;
+  color: black;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+h3 {
+  font-family: josefin sans;
+  color: rgb(55,24,21);
+  font-size: 20px;
+  margin: 0;
 }
 
 @media only screen and (max-width: 1000px) and (max-aspect-ratio: 13/9){
